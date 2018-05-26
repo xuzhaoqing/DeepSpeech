@@ -16,5 +16,9 @@ ARTHUR ZhaoqingXu
 			   libogg-dev  \
 			   libvorbis-dev \
 		           libboost-dev \
-                           swig
+                           swig        \
+			   git            
 	pip install paddlepaddle-gpu
+	git clone https://github.com/PaddlePaddle/DeepSpeech.git
+	cd DeepSpeech
+	sh setup.sh
