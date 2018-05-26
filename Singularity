@@ -8,14 +8,14 @@ ARTHUR ZhaoqingXu
 %post
 	apt-get update
 	apt-get install -y cmake \
-			   python2.7 \
+			   python2.7  \
 		           python-pip \
 			   gcc  \
-			   pkg-config \
+			   pkg-config  \
 		           libflac-dev \ 
 			   libogg-dev  \
 			   libvorbis-dev \
 		           libboost-dev \
                            swig        \
 			   git
-	
+	pip install paddlepaddle-gpu 
