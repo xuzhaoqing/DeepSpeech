@@ -12,7 +12,7 @@ ARTHUR ZhaoqingXu
 		           python-pip \
 			   gcc  \
 			   pkg-config \
-		          
+		           libflac-dev \ 
 			   libogg-dev  \
 			   libvorbis-dev \
 		           libboost-dev \
