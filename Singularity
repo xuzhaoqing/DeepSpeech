@@ -22,7 +22,8 @@ From:ubuntu:latest
                            libogg-dev  \
                            libvorbis-dev \
                            libboost-dev \
-                           swig
+                           swig         \
+			   wget
         locale-gen en_US.UTF-8 && dpkg-reconfigure locales
         pip install paddlepaddle-gpu
 
