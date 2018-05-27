@@ -37,9 +37,10 @@ From:ubuntu:latest
 	cd mkl-dnn
 	cd scripts && ./prepare_mkl.sh && cd ..
 	mkdir -p build && cd build && cmake .. && make && make install
-	cp libmkldnn.so.0.9.0 /usr/lib
+	cd src
+	cp libmkldnn.so.0.14.0 /usr/lib/libmkldnn.so.0.14.0
 	cd /usr/lib
-	ln -s libmkldnn.so.0.9.0 libmkldnn.so.0
+	ln -s libmkldnn.so.0.14.0 libmkldnn.so.0
 	ln -s libmkldnn.so.0 libmkldnn.so
 	ldconfig
 	cd 
