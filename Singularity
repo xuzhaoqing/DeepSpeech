@@ -30,13 +30,10 @@ From:ubuntu:latest
 	wget http://downloads.xiph.org/releases/flac/flac-1.3.2.tar.xz   
         tar -xvf flac-1.3.2.tar.xz
 	cd flac-1.3.2
-	./configure --prefix=$HOME/inst --disable-ogg
+	./configure --prefix=$HOME/usr --disable-ogg
 	make
 	make install
-	cd $HOME/inst
-	export PATH = $HOME/inst/bin:$PATH
-	export LD_LIBRARY_PATH = $HOME/inst/lib:$LD_LIBRARY_PATH
-	export PKG CONFIG PATH = $HOME/lib/pkgconfig:$PKG CONFIG PATH	         
+	cd          
 	git clone https://github.com/PaddlePaddle/DeepSpeech.git
 	cd DeepSpeech
 	sh setup.sh
