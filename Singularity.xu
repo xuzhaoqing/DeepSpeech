@@ -11,4 +11,4 @@ export HOME="/mnt/rds/redhen/gallina/Singularity/DeepSpeech2/DeepSpeech"
 
 %post	
 pip install -U numpy==1.12.0
-apt install cmake
+pip install cmake
