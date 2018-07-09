@@ -1,5 +1,5 @@
 Bootstrap:docker  
-From:paddlepaddle/deep_speech:latest-gpu
+From:paddlepaddle/deep_speech:latest-noavx-openblas
 
 %labels
 ARTHUR ZhaoqingXu
@@ -10,5 +10,7 @@ export HOME="/mnt/rds/redhen/gallina/Singularity/DeepSpeech2/DeepSpeech"
 
 
 %post	
-pip install -U numpy==1.12.0
-pip install cmake
+#pip install -U numpy==1.12.0
+#pip install cmake
+cd ~
+sh setup.sh
