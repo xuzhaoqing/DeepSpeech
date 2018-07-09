@@ -4,7 +4,5 @@ From:paddlepaddle/deep_speech:latest-gpu
 %labels
 ARTHUR ZhaoqingXu
 
-%post
-#pip install --upgrade pip	
-#pip install -U numpy==1.12.0
-apt-get install cmake
+%post	
+pip install -U numpy==1.12.0
