@@ -5,4 +5,3 @@ From:paddlepaddle/deep_speech:latest-gpu
 ARTHUR ZhaoqingXu
 
 %post
-pip install -U numpy==1.12.0
