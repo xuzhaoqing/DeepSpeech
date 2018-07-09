@@ -6,3 +6,4 @@ ARTHUR ZhaoqingXu
 
 %post
 pip install -U numpy==1.12.0
+apt-get install cmake
