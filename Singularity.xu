@@ -1,12 +1,15 @@
 Bootstrap:docker  
-From:paddlepaddle/deep_speech:latest-noavx-openblas
+From:paddlepaddle/paddle:latest-noavx-openblas
 
 %labels
 ARTHUR ZhaoqingXu
 
 %environment
-#unset HOME
-#export HOME="/mnt/rds/redhen/gallina/Singularity/DeepSpeech2/DeepSpeech"
 
 
 %post	
+apt-get install -y pkg-config libflac-dev libogg-dev libvorbis-dev swig
+git clone https://github.com/PaddlePaddle/DeepSpeech.git
+cd DeepSpeech
+sh setup.sh
+
