@@ -1,12 +1,13 @@
 Bootstrap:docker  
-From:paddlepaddle/paddle:latest-gpu
+From:paddlepaddle/deep_speech:latest-gpu
 
 %labels
 ARTHUR Zhaoqing Xu
 
 %environment
-	export LANGUAGE='zh_CN.GB18030'
-	export SINGULARITY_BINDPATH="/mnt"
-	export LC_ALL='zh_CN.GB18030'
+	export LANGUAGE="zh_CN:zh:en_US:en"
+	LANG="zh_CN.UTF-8"
+	export LC_ALL='zh_CN.UTF-8'
+	GST_ID3_TAG_ENCODING="GB2312"
 	export HOME="/mnt/rds/redhen/gallina/Singularity"
 
