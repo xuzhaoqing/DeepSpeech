@@ -6,8 +6,6 @@ ARTHUR Zhaoqing Xu
 
 %environment
 	export LANGUAGE="zh_CN:zh:en_US:en"
-	LANG="zh_CN.UTF-8"
-	export LC_ALL='zh_CN.UTF-8'
-	GST_ID3_TAG_ENCODING="GB2312"
+	export LANG="zh_CN.UTF-8"
 	export HOME="/mnt/rds/redhen/gallina/Singularity"
 
