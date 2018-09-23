@@ -4,4 +4,6 @@ From:paddlepaddle/deep_speech:latest-gpu
 %labels
 ARTHUR ZhaoqingXu
 
-%post
+%environment
+	export LANG='C.UTF-8'
+        export HOME="/mnt/rds/redhen/gallina/Singularity"
