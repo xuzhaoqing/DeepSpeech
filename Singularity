@@ -9,7 +9,6 @@ ARTHUR ZhaoqingXu
         export HOME="/mnt/rds/redhen/gallina/Singularity"
 
 %post
-  apt-get install ffmpeg
-  apt-get install sox
+  apt-get update && apt-get -y install ffmpeg sox
 
 
