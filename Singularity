@@ -10,5 +10,5 @@ ARTHUR ZhaoqingXu
 
 %post
   apt-get update && apt-get -y install ffmpeg sox
-
+  pip install webrtcvad
 
